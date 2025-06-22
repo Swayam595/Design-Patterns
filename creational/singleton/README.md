@@ -1,6 +1,4 @@
-# Singleton Pattern and Double-Checked Locking
-
-## 🧩 Singleton Pattern
+# 🧩 Singleton Design Pattern
 
 The **Singleton Pattern** ensures that a class has **only one instance** and provides a **global point of access** to that instance.
 
@@ -13,7 +11,7 @@ It is commonly used in situations where:
 - A static instance of the class
 - A public method to get the instance
 
-### 🔒 Double-Checked Locking
+## 🔒 Double-Checked Locking
 
 **Double-Checked Locking** is an optimization technique used to reduce the overhead of acquiring a lock by first testing the locking criterion without synchronization.
 
