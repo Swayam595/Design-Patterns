@@ -9,14 +9,33 @@ Design patterns are **proven solutions** to common software design problems. The
 - They are **language-independent**, but commonly applied in object-oriented programming (OOP).
 - Patterns are **not code templates**, but rather general **conceptual solutions** that can be adapted to specific problems.
 - Categorized into three main types:
-  - **Creational** (e.g., Singleton, Factory, Builder)
+  - **Creational** (e.g., Singleton, Factory, Builder, Prototype)
   - **Structural** (e.g., Adapter, Decorator, Composite)
   - **Behavioral** (e.g., Observer, Strategy, Command)
 - Following design patterns leads to **more flexible and scalable architecture**.
 
 ## 1. Creational Design Patterns
+- Focuses on solving common problems related to object creation. These patterns abstract the instantiation process making it more flexible and reusable.
+- Commonly occurring problems with respect to creation of object of an entity
 ### 1.a 🧩 Singleton Design Pattern
 
 The **Singleton Pattern** ensures that a class has **only one instance** and provides a **global point of access** to that instance.
 
 🔗 [Learn more about the Singleton Design Pattern](https://github.com/Swayam595/Design-Patterns/tree/main/creational/singleton)
+
+### 1.b 🧱 Builder Design Pattern
+
+
+
+
+
+
+
+
+
+## 2. Structural Design Patterns
+- Concerned with the composition of classes and objects. These patterns help define clear relationships and structure between entities to ensure flexibility and maintainability.
+- Addresses how should different classes relate to each other, what attributes/ methods should be in a class, how codebase should be structured.
+
+## 3. Behavioral Design Patterns
+- Deals with object interaction and communication. These patterns define how responsibilities are distributed and how objects cooperate to perform tasks.
