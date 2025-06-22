@@ -19,4 +19,4 @@ Design patterns are **proven solutions** to common software design problems. The
 
 The **Singleton Pattern** ensures that a class has **only one instance** and provides a **global point of access** to that instance.
 
-🔗 [Learn more about the Singleton Design Pattern](https://github.com/Swayam595/Design-Patterns/tree/main/singleton)
+🔗 [Learn more about the Singleton Design Pattern](https://github.com/Swayam595/Design-Patterns/tree/main/creational/singleton)
