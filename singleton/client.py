@@ -16,12 +16,24 @@ def create_client(name, email, password):
     client.connect_to_database()
     print (f"[{threading.current_thread().name}] Client created with instance ID: {id(client)}")
 
+### This method will always raise an exception because the databse connection 
+### constructor will throw an exception when an object is created using the constructor
+def create_new_database_connection_connection():
+    try:
+        db = DatabaseConnection()
+        print(f"[{threading.current_thread().name}] Database connection created with instance ID: {id(db)}")
+    except Exception as e:
+        print(f"[{threading.current_thread().name}] Error creating new database connection: {e}")
+
 if __name__ == "__main__":
     thread1 = threading.Thread(target=create_client, args=("John Doe", "john.doe@example.com", "1234567890"), name="Thread 1")
     thread2 = threading.Thread(target=create_client, args=("Jane Doe", "jane.doe@example.com", "1234567890"), name="Thread 2")
+    thread3 = threading.Thread(target=create_new_database_connection_connection, name="Thread 3")
 
     thread1.start()
     thread2.start()
+    thread3.start()
 
     thread1.join()
     thread2.join()
+    thread3.join()

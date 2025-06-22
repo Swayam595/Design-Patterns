@@ -1,9 +1,14 @@
 import threading
-import time
 
 class DatabaseConnection:
     _instance = None
     _lock = threading.Lock()
+
+    def __init__(self):
+        if DatabaseConnection._instance is not None:
+            raise Exception("Use get_instance() to get the singleton instance.")
+        self.connection = None
+
 
     @staticmethod
     def get_instance():
@@ -20,9 +25,6 @@ class DatabaseConnection:
         else:
             print(f"[{threading.current_thread().name}] Instance already exists, returning existing instance...")
         return DatabaseConnection._instance
-    
-    def __init__(self):
-        self.connection = None
 
     def connect(self, host, port, database, user, password):
         self.connection = f"Connected to {host}:{port}/{database} as {user} with password {password}"
