@@ -14,8 +14,8 @@ Design patterns are **proven solutions** to common software design problems. The
   - **Behavioral** (e.g., Observer, Strategy, Command)
 - Following design patterns leads to **more flexible and scalable architecture**.
 
-# 1. Creational Design Patterns
-## 1.a 🧩 Singleton Design Pattern
+## 1. Creational Design Patterns
+### 1.a 🧩 Singleton Design Pattern
 
 The **Singleton Pattern** ensures that a class has **only one instance** and provides a **global point of access** to that instance.
 
