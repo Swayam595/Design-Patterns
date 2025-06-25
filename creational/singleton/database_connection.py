@@ -1,17 +1,21 @@
+"""Module to create a singleton instance of the DatabaseConnection class."""
 import threading
 
 class DatabaseConnection:
+    """DatabaseConnection class."""
     _instance = None
     _lock = threading.Lock()
 
     def __init__(self):
+        """Initialize the DatabaseConnection instance."""
         if DatabaseConnection._instance is not None:
-            raise Exception("Use get_instance() to get the singleton instance.")
+            raise ValueError("Use get_instance() to get the singleton instance.")
         self.connection = None
 
 
     @staticmethod
     def get_instance():
+        """Get the singleton instance of the DatabaseConnection class."""
         print(f"[{threading.current_thread().name}] Checking if instance exists...")
         if DatabaseConnection._instance is None:
             print(f"[{threading.current_thread().name}] Instance is None, attempting to acquire lock...")
@@ -27,5 +31,6 @@ class DatabaseConnection:
         return DatabaseConnection._instance
 
     def connect(self, host, port, database, user, password):
+        """Connect to the database."""
         self.connection = f"Connected to {host}:{port}/{database} as {user} with password {password}"
         print (self.connection)
