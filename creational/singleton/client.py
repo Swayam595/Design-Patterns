@@ -28,13 +28,24 @@ def create_new_database_connection_connection():
     """Create a new database connection using the constructor."""
     try:
         db = DatabaseConnection()
-        print(f"[{threading.current_thread().name}] Database connection created with instance ID: {id(db)}")
+        print(f"[{threading.current_thread().name}] Database connection created "
+              f"with instance ID: {id(db)}")
     except ValueError as e:
         print(f"[{threading.current_thread().name}] Error creating new database connection: {e}")
 
 if __name__ == "__main__":
-    thread1 = threading.Thread(target=create_client, args=("John Doe", "john.doe@example.com", "1234567890"), name="Thread 1")
-    thread2 = threading.Thread(target=create_client, args=("Jane Doe", "jane.doe@example.com", "1234567890"), name="Thread 2")
+    thread1 = threading.Thread(
+        target=create_client, 
+        args=("John Doe", "john.doe@example.com", "1234567890"), 
+        name="Thread 1"
+    )
+
+    thread2 = threading.Thread(
+        target=create_client, 
+        args=("Jane Doe", "jane.doe@example.com", "1234567890"), 
+        name="Thread 2"
+    )
+
     thread3 = threading.Thread(target=create_new_database_connection_connection, name="Thread 3")
 
     thread1.start()

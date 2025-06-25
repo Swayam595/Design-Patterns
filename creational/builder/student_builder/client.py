@@ -34,9 +34,23 @@ def create_student(name, age, gender, address, psp):
     return client.create_student()
 
 if __name__ == "__main__":
-    thread1 = threading.Thread(target=create_student, args=("John Doe", 20, "Male", "123 Main St, Anytown, USA", 85), name="Thread 1")
-    thread2 = threading.Thread(target=create_student, args=("Jane Doe", 21, "Female", "456 Main St, Anytown, USA", 80), name="Thread 2")
-    thread3 = threading.Thread(target=create_student, args=("Jim Beam", 22, "Male", "789 Main St, Anytown, USA", 75), name="Thread 3")
+    thread1 = threading.Thread(
+        target=create_student, 
+        args=("John Doe", 20, "Male", "123 Main St, Anytown, USA", 85), 
+        name="Thread 1"
+    )
+
+    thread2 = threading.Thread(
+        target=create_student, 
+        args=("Jane Doe", 21, "Female", "456 Main St, Anytown, USA", 80), 
+        name="Thread 2"
+    )
+
+    thread3 = threading.Thread(
+        target=create_student, 
+        args=("Jim Beam", 22, "Male", "789 Main St, Anytown, USA", 75), 
+        name="Thread 3"
+    )
 
     thread1.start()
     thread2.start()

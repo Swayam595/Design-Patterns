@@ -1,3 +1,5 @@
+"""No module required."""
+
 class Student:
     """Student class."""
 
@@ -13,7 +15,9 @@ class Student:
 
     def __str__(self):
         """Return a string representation of the Student."""
-        return f"Student(name={self._name}, age={self._age}, gender={self._gender}, address={self._address}, psp={self._psp})"
+        return (f"Student(name={self._name}, age={self._age}, "
+                f"gender={self._gender}, address={self._address}, "
+                f"psp={self._psp})")
 
     @staticmethod
     def get_builder():
