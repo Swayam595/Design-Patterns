@@ -14,14 +14,14 @@ Design patterns are **proven solutions** to common software design problems. The
   - **Behavioral** (e.g., Observer, Strategy, Command)
 - Following design patterns leads to **more flexible and scalable architecture**.
 
-## 1. [Creational Design Patterns]https://github.com/Swayam595/Design-Patterns/tree/main/creational
+## 1. [Creational Design Patterns](https://github.com/Swayam595/Design-Patterns/tree/main/creational)
 - Focuses on solving common problems related to object creation. These patterns abstract the instantiation process making it more flexible and reusable.
 - Commonly occurring problems with respect to creation of object of an entity
 ### 1.a 🧩 [Singleton Design Pattern](https://github.com/Swayam595/Design-Patterns/tree/main/creational/singleton)
 
 The **Singleton Pattern** ensures that a class has **only one instance** and provides a **global point of access** to that instance.
 
-### 1.b 🧱 [Builder Design Pattern]https://github.com/Swayam595/Design-Patterns/tree/main/creational/builder
+### 1.b 🧱 [Builder Design Pattern](https://github.com/Swayam595/Design-Patterns/tree/main/creational/builder)
 
 
 
