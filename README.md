@@ -1,4 +1,4 @@
-# Design Patterns
+# [Design Patterns](https://refactoring.guru/design-patterns)
 
 ## 💡 What are Design Patterns?
 
