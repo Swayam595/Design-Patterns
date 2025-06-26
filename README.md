@@ -23,7 +23,7 @@ The **Singleton Pattern** ensures that a class has **only one instance** and pro
 
 ### 1.b 🧱 [Builder Design Pattern](https://github.com/Swayam595/Design-Patterns/tree/main/creational/builder)
 
-
+**Builder Patterns** lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 
 
 
