@@ -1,4 +1,4 @@
-# 🧩 Singleton Design Pattern
+# 🧩 [Singleton Design Pattern](https://refactoring.guru/design-patterns/singleton)
 
 The **Singleton Pattern** ensures that a class has **only one instance** and provides a **global point of access** to that instance.
 
